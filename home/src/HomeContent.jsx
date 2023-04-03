@@ -10,7 +10,6 @@ export default function HomeContent() {
     getProducts().then(setProducts)
   },[]);
 
-  console.log(products);
   return (
     <div className='my-10 grid grid-cols-4 gap-5'>
       {
@@ -18,10 +17,10 @@ export default function HomeContent() {
           <div key={product.id}>
             <img src={product.image} alt={product.name} />
             <div className='flex'>
-              <div className='flex-grow font-bold'>
+              <div className='flex-grow font-bold text-2xl'>
                 <a>{product.name}</a>
               </div>
-              <div className='flex-end'>
+              <div className='flex-end text-2xl'>
                 {currency.format(product.price)}
               </div>
             </div>

@@ -1,0 +1,24 @@
+.icons-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row dense;
+}
+
+.icon-card {
+    width: 300px;
+    border: 1px solid;
+    margin-top: 32px;
+    height: 50px;
+    border-bottom: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.icon-details {
+    z-index: -1;
+    border: 1px solid red;
+    margin-top: -1px;
+    height: 100px;
+    grid-column: 1/-1;
+    display: none;
+}
